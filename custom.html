@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script type=module src="/nav.js"></script>
+  <navigator-bar></navigator-bar>
+  <main>
+    <div class="containerTop">
+      <div class="customSelect">
+        <h1 id="testPanelHeader">Test Liveries / Vehicles</h1>
+        <ul class="sliderbar">
+          <li class="sliderbar-item" id="livSel" onclick="changeCustomMenu(0)">
+            <span>Livery</span>
+          </li>
+          <li class="sliderbar-item" id="vehSel" onclick="changeCustomMenu(1)">
+            <span>Vehicle</span>
+          </li>
+        </ul>
+        <div class="entryContainer">
+          <div id="modVehicle">
+            In Development. <br>
+            Contact Ariakim for more information on how to contribute.
+          </div>
+          <div id="modLivery">
+            <div style="display: flex; flex-direction: row; align-items: center;">
+              Livery:
+              <input type="file" class="searchbox" id="customLiveryIn" placeholder="File link here">
+              <button onclick="applyCustomLivery()">Submit</button>
+            </div>
+            <div style="display: flex; flex-direction: row; align-items: center;">
+              Watermark Offset:
+              <input type="range" id="offsetRange" value="0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="htmlHandlers.js"></script>
+</body>
+
+</html>
