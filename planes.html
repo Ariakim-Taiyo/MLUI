@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script type=module src="/nav.js"></script>
+  <main>
+    <navigator-bar></navigator-bar>
+    <div class="container">
+      <div id="messageContainer"></div>
+      <h1>Search Vehicles</h1>
+      <a href="disclaimer.html" id="disclaimer">
+      Disclaimer
+      </a>
+      <input id="vehicleSearch" class="searchbox" type="text" placeholder="Search"
+        onchange="populateVehicles(document.getElementById('vehicleSearch').value)">
+      <div id="vehicleGallery" class="selectionGallery">
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
