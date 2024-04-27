@@ -13,6 +13,27 @@
   <navigator-bar></navigator-bar>
   <main>
     <div class="containerTop">
+      <div id="messageContainer"></div>
+      <div id="formBlur" onclick="toggleSubmissionForm()"></div>
+      <div id="formModal">
+        <h1>Submit Livery</h1>
+        <div class="labeledInputCont">
+          <span>Livery Name:</span> <input id="nameInput" type="text">
+        </div>
+        <div class="labeledInputCont">
+          <span>Author Name</span> <input id="authorInput" type="text">
+        </div>
+        <div class="labeledInputCont">
+          <span>Airframe:</span> <input id="airframeInput" type="text">
+        </div>
+        <div class="labeledInputCont">
+          <span>Livery Link:</span> <input id="subLivInput" type="text">
+        </div>
+        <div class="labeledInputCont">
+          <span>Thumbnail Link:</span> <input id="thumbInput" type="text">
+        </div>
+        <button id="submitLivButton" onclick="doSubmission()">Submit</button>
+      </div>
       <div class="customSelect">
         <h1 id="testPanelHeader">Test Liveries / Vehicles</h1>
         <ul class="sliderbar">
@@ -38,6 +59,7 @@
               Watermark Offset:
               <input type="range" id="offsetRange" value="0">
             </div>
+            <button onclick="toggleSubmissionForm()">Submit A Livery</button>
           </div>
         </div>
       </div>
